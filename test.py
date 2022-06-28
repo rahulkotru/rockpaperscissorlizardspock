@@ -8,4 +8,5 @@ while (True):
     imgBG= cv2.imread("Resources/rock.png")
     success, img=cap.read()
     cv2.imshow("image",img)
+    cv2.imshow("BG",imgBG)
     cv2.waitkey(1)
