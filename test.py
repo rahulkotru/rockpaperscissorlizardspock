@@ -14,7 +14,7 @@ while (True):
 
     if hands:
         hand=hands[0]
-        
+        fingers=detector.fingersUp(hand)
     success, img=cap.read()
     cv2.imshow("image",img)
     cv2.imshow("BG",imgBG)
