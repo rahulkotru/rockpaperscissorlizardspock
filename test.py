@@ -13,6 +13,7 @@ while (True):
     imgBG[:,:]=imgScaled
 
     if hands:
+        hand=hands[0]
         
     success, img=cap.read()
     cv2.imshow("image",img)
