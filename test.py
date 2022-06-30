@@ -11,6 +11,9 @@ while (True):
     imgScaled= cv2.resize(imgBG,(0,0),None,0.875,0.875)
     imgScaled=imgScaled[:,80:480]
     imgBG[:,:]=imgScaled
+
+    if hands:
+        
     success, img=cap.read()
     cv2.imshow("image",img)
     cv2.imshow("BG",imgBG)
