@@ -12,6 +12,7 @@ startGame=False
 if(startGame):
     if startResult is False:
         timer=time.time()- initialTime
+        cv2.putText(imgBG,str(int(timer)),(605,435),cv2.FONT_HERSHEY_PLAIN,6,(255,0,255),4)
     imgBG= cv2.imread("Resources/rock.png")
     imgScaled= cv2.resize(imgBG,(0,0),None,0.875,0.875)
     imgScaled=imgScaled[:,80:480]
