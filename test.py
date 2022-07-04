@@ -2,6 +2,7 @@ import cvzone
 import mediapipe
 import cv2
 from cvzone.HandTrackingModule import HandDetector
+import time
 
 
 cap=cv2.VideoCapture(0)
