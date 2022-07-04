@@ -6,6 +6,7 @@ from cvzone.HandTrackingModule import HandDetector
 
 cap=cv2.VideoCapture(0)
 detector= HandDetector(maxHands=1)
+startResult=False
 while (True):
     imgBG= cv2.imread("Resources/rock.png")
     imgScaled= cv2.resize(imgBG,(0,0),None,0.875,0.875)
