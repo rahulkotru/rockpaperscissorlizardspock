@@ -24,6 +24,7 @@ if(startGame):
     if hands:
         hand=hands[0]
         fingers=detector.fingersUp(hand)
+        if fingers==[0,0,0,0,0]:
         print(fingers)
     success, img=cap.read()
     cv2.imshow("image",img)
