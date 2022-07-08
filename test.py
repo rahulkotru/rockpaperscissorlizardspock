@@ -35,6 +35,7 @@ if(startGame):
         print(fingers)
 
         imgAI=cv2.imread(f'Resources/')
+        cvzone.overlayPNG(imgBG,imgAI,(149,310))
         
     success, img=cap.read()
     cv2.imshow("image",img)
