@@ -33,6 +33,8 @@ if(startGame):
         if fingers=[0,1,1,0,0]:
             playerMove=3
         print(fingers)
+
+        imgAI
     success, img=cap.read()
     cv2.imshow("image",img)
     cv2.imshow("BG",imgBG)
