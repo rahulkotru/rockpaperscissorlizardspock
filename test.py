@@ -34,7 +34,8 @@ if(startGame):
             playerMove=3
         print(fingers)
 
-        imgAI
+        imgAI=cv2.imread(f'Resources/')
+        
     success, img=cap.read()
     cv2.imshow("image",img)
     cv2.imshow("BG",imgBG)
