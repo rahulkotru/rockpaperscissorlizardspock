@@ -10,6 +10,8 @@ detector= HandDetector(maxHands=1)
 startResult=False
 startGame=False
 if(startGame):
+
+
     if startResult is False:
         timer=time.time()- initialTime
         cv2.putText(imgBG,str(int(timer)),(605,435),cv2.FONT_HERSHEY_PLAIN,6,(255,0,255),4)
@@ -26,6 +28,7 @@ if(startGame):
         fingers=detector.fingersUp(hand)
         if fingers==[0,0,0,0,0]:
             playerMove=1
+        if fingers==[]
         print(fingers)
     success, img=cap.read()
     cv2.imshow("image",img)
