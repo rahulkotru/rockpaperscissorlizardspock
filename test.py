@@ -29,7 +29,7 @@ if(startGame):
         if fingers==[0,0,0,0,0]:
             playerMove=1
         if fingers==[1,1,1,1,1]:
-            
+            playerMove=2
         print(fingers)
     success, img=cap.read()
     cv2.imshow("image",img)
