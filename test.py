@@ -42,3 +42,4 @@ if(startGame):
     cv2.imshow("BG",imgBG)
     cv2.imshow("Scaled",imgScaled)
     cv2.waitkey(1)
+    1
