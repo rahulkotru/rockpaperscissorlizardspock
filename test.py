@@ -44,4 +44,4 @@ if(startGame):
     cv2.waitkey(1)
     1
 4
-3
+35
