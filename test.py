@@ -43,5 +43,5 @@ if(startGame):
     cv2.imshow("Scaled",imgScaled)
     cv2.waitkey(1)
     1
-2
+4
 3
