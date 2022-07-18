@@ -9,6 +9,7 @@ cap=cv2.VideoCapture(0)
 detector= HandDetector(maxHands=1)
 startResult=False
 startGame=False
+timer=0
 if(startGame):
 
 
