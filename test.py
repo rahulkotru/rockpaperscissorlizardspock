@@ -12,7 +12,7 @@ startGame=False
 timer=0
 scores=[0,0]
 while(True):
-
+    imgBG=cv2.imread("Resources/BG.png")
 
     if startResult is False:
         timer=time.time()- initialTime
