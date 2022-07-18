@@ -14,6 +14,8 @@ scores=[0,0]
 while(True):
     imgBG=cv2.imread("Resources/BG.png")
     success, img=cap.read()
+    imgScaled= cv2.resize(imgBG,(0,0),None,0.875,0.875)
+    imgScaled=imgScaled[:,80:480]
 
     if startResult is False:
         timer=time.time()- initialTime
@@ -22,8 +24,7 @@ while(True):
             startResult=True
             timer=0
     imgBG= cv2.imread("Resources/rock.png")
-    imgScaled= cv2.resize(imgBG,(0,0),None,0.875,0.875)
-    imgScaled=imgScaled[:,80:480]
+    
     imgBG[:,:]=imgScaled
 
     if hands:
