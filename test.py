@@ -3,7 +3,7 @@ import mediapipe
 import cv2
 from cvzone.HandTrackingModule import HandDetector
 import time
-
+import random
 
 cap=cv2.VideoCapture(0)
 detector= HandDetector(maxHands=1)
