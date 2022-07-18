@@ -19,15 +19,16 @@ while(True):
 
     hands,img=detector.findHands(imgScaled)
 
-    if startResult is False:
-        timer=time.time()- initialTime
-        cv2.putText(imgBG,str(int(timer)),(605,435),cv2.FONT_HERSHEY_PLAIN,6,(255,0,255),4)
-        if timer>3:
-            startResult=True
-            timer=0
-    imgBG= cv2.imread("Resources/rock.png")
+    if(startGame):
+        if startResult is False:
+            timer=time.time()- initialTime
+            cv2.putText(imgBG,str(int(timer)),(605,435),cv2.FONT_HERSHEY_PLAIN,6,(255,0,255),4)
+            if timer>3:
+                startResult=True
+                timer=0
+
     
-    imgBG[:,:]=imgScaled
+
 
     if hands:
         hand=hands[0]
