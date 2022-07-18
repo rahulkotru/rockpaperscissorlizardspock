@@ -13,6 +13,7 @@ timer=0
 scores=[0,0]
 while(True):
     imgBG=cv2.imread("Resources/BG.png")
+    success, img=cap.read()
 
     if startResult is False:
         timer=time.time()- initialTime
@@ -39,7 +40,7 @@ while(True):
         imgAI=cv2.imread(f'Resources/')
         cvzone.overlayPNG(imgBG,imgAI,(149,310))
         
-    success, img=cap.read()
+    
     cv2.imshow("image",img)
     cv2.imshow("BG",imgBG)
     cv2.imshow("Scaled",imgScaled)
