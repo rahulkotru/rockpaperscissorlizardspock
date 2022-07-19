@@ -48,7 +48,8 @@ while(True):
         print(playerMove)
     
     key=cv2.waitKey(1)
-    if(key)==ord('s')
+    if(key)==ord('s'):
+        startGame=True
     cv2.imshow("image",img)
     cv2.imshow("BG",imgBG)
     cv2.imshow("Scaled",imgScaled)
