@@ -42,7 +42,7 @@ while(True):
             playerMove=3
         print(fingers)
 
-        randomNumber=
+        randomNumber=random.randint(1,3)
         imgAI=cv2.imread(f'Resources/')
         cvzone.overlayPNG(imgBG,imgAI,(149,310))
         
