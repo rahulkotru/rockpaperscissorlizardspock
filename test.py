@@ -38,7 +38,7 @@ while(True):
             playerMove=1
         if fingers==[1,1,1,1,1]:
             playerMove=2
-        if fingers=[0,1,1,0,0]:
+        if fingers==[0,1,1,0,0]:
             playerMove=3
         print(fingers)
 
@@ -46,6 +46,7 @@ while(True):
         imgAI=cv2.imread(f'Resources/',cv2.IMREAD_UNCHANGED)
         cvzone.overlayPNG(imgBG,imgAI,(149,310))
         print(playerMove)
+    
     
     cv2.imshow("image",img)
     cv2.imshow("BG",imgBG)
