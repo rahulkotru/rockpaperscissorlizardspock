@@ -51,6 +51,7 @@ while(True):
     if(key)==ord('s'):
         startGame=True
         initialTime=time.time()
+        startResult=False
     cv2.imshow("image",img)
     cv2.imshow("BG",imgBG)
     cv2.imshow("Scaled",imgScaled)
