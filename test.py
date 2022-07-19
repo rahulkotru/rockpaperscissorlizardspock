@@ -47,7 +47,7 @@ while(True):
         cvzone.overlayPNG(imgBG,imgAI,(149,310))
         print(playerMove)
     
-    
+    key=cv2.waitKey(1)
     cv2.imshow("image",img)
     cv2.imshow("BG",imgBG)
     cv2.imshow("Scaled",imgScaled)
