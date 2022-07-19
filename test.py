@@ -45,7 +45,7 @@ while(True):
         randomNumber=random.randint(1,3)
         imgAI=cv2.imread(f'Resources/',cv2.IMREAD_UNCHANGED)
         cvzone.overlayPNG(imgBG,imgAI,(149,310))
-        
+        print(playerMove)
     
     cv2.imshow("image",img)
     cv2.imshow("BG",imgBG)
