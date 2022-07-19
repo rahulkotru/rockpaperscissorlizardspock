@@ -31,6 +31,7 @@ while(True):
 
 
     if hands:
+        playerMove=None
         hand=hands[0]
         fingers=detector.fingersUp(hand)
         if fingers==[0,0,0,0,0]:
@@ -41,6 +42,7 @@ while(True):
             playerMove=3
         print(fingers)
 
+        randomNumber=
         imgAI=cv2.imread(f'Resources/')
         cvzone.overlayPNG(imgBG,imgAI,(149,310))
         
