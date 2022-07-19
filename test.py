@@ -43,7 +43,7 @@ while(True):
         print(fingers)
 
         randomNumber=random.randint(1,3)
-        imgAI=cv2.imread(f'Resources/')
+        imgAI=cv2.imread(f'Resources/',cv2.IMREAD_UNCHANGED)
         cvzone.overlayPNG(imgBG,imgAI,(149,310))
         
     
