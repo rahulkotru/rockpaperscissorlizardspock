@@ -58,5 +58,3 @@ while(True):
     cv2.waitkey(1)
     
 
-1
-23456789
