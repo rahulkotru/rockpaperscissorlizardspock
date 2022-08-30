@@ -27,7 +27,7 @@ while(True):
                 startResult=True
                 timer=0
 
-    12
+    123
 
 
     if hands:
