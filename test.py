@@ -28,7 +28,7 @@ while(True):
                 timer=0
 
     
-1234
+12345
 
     if hands:
         playerMove=None
