@@ -57,4 +57,3 @@ while(True):
     cv2.imshow("Scaled",imgScaled)
     cv2.waitkey(1)
     
-123456789
